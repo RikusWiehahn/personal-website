@@ -6,7 +6,27 @@ html {
     height: 100%;
 }
 
+h1 {
+  font-family: sans-serif;
+  line-height: 56px;
+}
+
+h2 {
+  font-family: sans-serif;
+  line-height: 40px;
+}
+
+h3 {
+  font-family: sans-serif;
+  line-height: 32px;
+}
+
 body {
     margin: 0;
-    padding: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+    display: flex;
+    justify-content: center;
+    background-color: #140050;
 }

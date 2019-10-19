@@ -65,6 +65,7 @@ module.exports = {
         color: config.themeColor
       }
     },
+    "gatsby-plugin-emotion",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-catch-links",
