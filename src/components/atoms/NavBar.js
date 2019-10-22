@@ -10,15 +10,20 @@ class Bar extends Component {
       <div>
         <div style={{ height: "50px" }} />
         <Nav>
-          <div style={{ display: "flex", alignItems: "center", maxWidth: '800px', width: '100%' }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              maxWidth: "800px",
+              width: "100%"
+            }}
+          >
             <Emoji
-              symbol="💥"
+              symbol="🤖"
               style={{ fontSize: "32px", margin: "16px" }}
             />
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <Subheading>
-                Rikus Wiehahn
-              </Subheading>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Subheading>Rikus Wiehahn</Subheading>
             </Link>
           </div>
         </Nav>
@@ -36,6 +41,7 @@ const Nav = styled.nav({
   borderStyle: "solid",
   borderWidth: "0px",
   borderBottomWidth: "1px",
+  boxShadow: "0px 0px 5px 5px rgba(0,0,0,0.03)",
   borderColor: "#eee",
   left: "0px",
   backgroundColor: "#fff",

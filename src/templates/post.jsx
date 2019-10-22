@@ -25,7 +25,16 @@ export default class PostTemplate extends React.Component {
     }
     return (
       <Layout>
-        <div style={{ padding: "16px", backgroundColor: "#fff" }}>
+        <div
+          style={{
+            padding: "16px",
+            backgroundColor: "#fff",
+            boxShadow: "0px 0px 5px 5px rgba(0,0,0,0.03)",
+            borderStyle: 'solid',
+            borderWidth: '1px',
+            borderColor: '#efefef'
+          }}
+        >
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>

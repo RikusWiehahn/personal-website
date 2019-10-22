@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
+import { navigate } from "gatsby";
 import { Heading, Card, Body } from "../atoms/index";
 
-var moment = require('moment');
+var moment = require("moment");
 
 class PostListing extends React.Component {
   getPostList() {
@@ -28,26 +28,22 @@ class PostListing extends React.Component {
         {/* Your post list here. */
         postList.map(post => (
           <Card
-            style={{
-              display: "flex",
-              flex: 1,
-              alignItems: "center",
-              marginTop: "4px"
+            onClick={() => {
+              navigate(post.path);
             }}
           >
             <img
               src={post.cover}
-              style={{ width: "140px", height: "140px", marginRight: "8px", objectFit: 'cover' }}
+              style={{
+                width: "80px",
+                height: "80px",
+                marginRight: "8px",
+                objectFit: "cover"
+              }}
             />
             <div>
-              <Link
-                to={post.path}
-                key={post.title}
-                style={{ textDecoration: "none" }}
-              >
-                <Heading>{post.title}</Heading>
-              </Link>
-              <Body>{moment(post.date).format("LL")}</Body>
+              <Heading style={{ margin: '0px' }}>{post.title}</Heading>
+              <Body style={{ margin: '0px' }}>{moment(post.date).format("LL")}</Body>
             </div>
           </Card>
         ))}

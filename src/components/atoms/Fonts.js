@@ -49,7 +49,7 @@ export const Body = ({ style = {}, children }) => (
   <p
     style={{
       fontFamily: "'Times', serif",
-      fontSize: "14px",
+      fontSize: "18px",
       color: "#000",
       fontWeight: "400",
       ...style

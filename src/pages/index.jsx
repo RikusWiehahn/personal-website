@@ -5,7 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
-import { NavBar } from "../components/atoms/index";
+import { NavBar, Heading, Card, Body, Subheading, AboutMe, SocialLinks } from "../components/atoms";
 
 class Index extends React.Component {
   render() {
@@ -16,6 +16,19 @@ class Index extends React.Component {
           <Helmet title={config.siteTitle} />
           <SEO />
           <NavBar />
+          <AboutMe />
+          <SocialLinks />
+          <Heading style={{ margin: "0px", marginLeft: "16px" }}>
+            Current Work 💼
+          </Heading>
+          <CurrentJob />
+          <Heading style={{ margin: "0px", marginLeft: "16px" }}>
+            Current Side Hustle 🛠
+          </Heading>
+          <CurrentProjects />
+          <Heading style={{ margin: "0px", marginLeft: "16px" }}>
+            Essays 📜
+          </Heading>
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
@@ -51,3 +64,57 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+const CurrentProjects= () => {
+  return (
+    <Card
+      style={{ flexDirection: "column" }}
+      onClick={() => window.open("https://cohabb.com")}
+    >
+      <div style={{ display: "flex", width: "100%" }}>
+        <img
+          src={'/images/working_together.png'}
+          style={{
+            width: "180px",
+            height: "180px",
+            marginRight: "8px",
+            objectFit: "cover"
+          }}
+        />
+        <div style={{}}>
+          <Heading style={{ margin: "0px", padding: "0px" }}>Cohabb</Heading>
+          <Body style={{ margin: "0px" }}>
+            A platform for listing and booking physical spaces
+          </Body>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+const CurrentJob= () => {
+  return (
+    <Card
+      style={{ flexDirection: "column" }}
+      onClick={() => window.open("https://layerx.co.nz")}
+    >
+      <div style={{ display: "flex", width: "100%" }}>
+        <img
+          src={'/images/layerx.jpg'}
+          style={{
+            width: "180px",
+            height: "180px",
+            marginRight: "8px",
+            objectFit: "cover"
+          }}
+        />
+        <div style={{}}>
+          <Heading style={{ margin: "0px", padding: "0px" }}>LayerX</Heading>
+          <Body style={{ margin: "0px" }}>
+            Designer and Fullstack Developer 🔥
+          </Body>
+        </div>
+      </div>
+    </Card>
+  );
+};

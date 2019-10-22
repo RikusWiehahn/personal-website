@@ -2,8 +2,8 @@ const config = {
   siteTitle: "Rikus Wiehahn's Rantings", // Site title.
   siteTitleShort: "Rikus' Rants", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Rants by Rikus Wiehahn", // Alternative site title for SEO.
-  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://www.rikuswiehahn.com", // Domain of your website without pathPrefix.
+  siteLogo: "/images/favicon.png", // Logo used for SEO and manifest.
+  siteUrl: "https://rikuswiehahn.com", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-advanced-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A place where I can put all my ideas out there.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -17,19 +17,19 @@ const config = {
   userEmail: "rikus@zeltta.com", // Email used for RSS feed's author segment
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "Hamilton, New Zealand", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userAvatar: "/images/mugshot.jpg", // User avatar to display in the author segment.
   userDescription:
     "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-advanced-starter",
+      url: "https://github.com/RikusWiehahn",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/RikusWiehahn",
       iconClassName: "fa fa-twitter"
     },
     {

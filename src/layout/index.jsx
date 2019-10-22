@@ -12,6 +12,7 @@ export default class MainLayout extends React.Component {
         <Helmet>
           <meta name="description" content={config.siteDescription} />
           <html lang="en" />
+          <link rel="shortcut icon" href="/images/favicon.png" />
         </Helmet>
         {children}
       </div>
