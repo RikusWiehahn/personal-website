@@ -1,11 +1,12 @@
 import React from "react";
+import styled from '@emotion/styled';
 import { Heading, Body } from "./Fonts";
 import { Card } from "./Card";
 
 export const AboutMe = () => {
   return (
     <Card style={{ flexDirection: "column" }}>
-      <div style={{ display: "flex", width: "100%" }}>
+      <ResponsiveContainer>
         <img
           src={'/images/mugshot.jpg'}
           style={{
@@ -24,9 +25,16 @@ export const AboutMe = () => {
             about and document my journey ✌️.
           </Body>
         </div>
-      </div>
+      </ResponsiveContainer>
     </Card>
   );
 };
+
+const ResponsiveContainer = styled.div({
+  display: "flex",
+  "@media screen and (max-width: 500px)": {
+    flexDirection: 'column',
+  }
+});
 
 

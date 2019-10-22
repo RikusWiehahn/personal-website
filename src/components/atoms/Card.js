@@ -29,7 +29,7 @@ const Container = styled.div(({ style = {}, clickable }) => {
     display: "flex",
     alignItems: "center",
     marginTop: "4px",
-    boxShadow: "0px 0px 5px 5px rgba(0,0,0,0.03)",
+    boxShadow: "0px 0px 5px 5px rgba(0,0,75,0.05)",
     padding: "8px",
     margin: "8px",
     ":hover": {
