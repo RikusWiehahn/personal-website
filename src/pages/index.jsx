@@ -100,7 +100,7 @@ const CurrentJob= () => {
     >
       <div style={{ display: "flex", width: "100%" }}>
         <img
-          src={'/images/layerx.jpg'}
+          src={'/images/LayerX.jpg'}
           style={{
             width: "180px",
             height: "180px",
