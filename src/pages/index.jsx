@@ -69,7 +69,7 @@ const CurrentProjects= () => {
   return (
     <Card
       style={{ flexDirection: "column" }}
-      onClick={() => window.open("https://cohabb.com")}
+      onClick={() => window.open("https://cohabb.co.nz")}
     >
       <div style={{ display: "flex", width: "100%" }}>
         <img
